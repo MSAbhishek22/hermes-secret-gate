@@ -1,0 +1,10 @@
+# Dependency declaration for Hermes plugin admission.
+# Stdlib only — no third-party runtime dependencies by design: a security
+# gate must not pull in code nobody reviewed. Per the Hermes developer
+# guide, a pyproject with empty dependencies and no [build-system] counts
+# as "no declaration", so enabling the plugin asks no dependency question.
+[project]
+name = "hermes-secret-gate"
+version = "1.0.0"
+requires-python = ">=3.11"
+dependencies = []

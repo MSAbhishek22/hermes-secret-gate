@@ -1,0 +1,16 @@
+name: hermes-secret-gate
+version: 1.0.0
+manifest_version: 2
+api_version: 1
+description: Stop agent-drafted secrets from leaving the machine — deterministic scan, fail-closed gate, receipts
+license: MIT
+homepage: https://github.com/MSAbhishek22/hermes-secret-gate
+tags: [security, secrets, guardrails, safety]
+requires_hermes: ">=0.21.5"
+provides_tools:
+  - secret_scan
+  - secret_gate_check
+  - secret_gate_receipts
+provides_hooks:
+  - post_tool_call
+python_dependencies: []
